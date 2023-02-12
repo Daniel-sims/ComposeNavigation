@@ -1,0 +1,12 @@
+plugins {
+    id("example.android.feature")
+    id("example.android.library.compose")
+}
+
+android {
+    namespace = "com.example.home"
+}
+
+dependencies {
+
+}

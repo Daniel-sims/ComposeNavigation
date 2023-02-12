@@ -1,0 +1,27 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    /**
+     * Library and application plugins.
+     *
+     * By using apply false, these are simply used to define the versions that are used in modules
+     * that apply the application/library plugin.
+     */
+    alias(libs.plugins.application).apply(false)
+    alias(libs.plugins.library).apply(false)
+
+    /**
+     * Kotlin, because it's a kotlin project (lol).
+     */
+    alias(libs.plugins.kotlin.android).apply(false)
+
+    /**
+     * Plugin that is used to define what constitutes stable.
+     * @see <a href="https://github.com/janderssonse/gradle-versions-filter-plugin">Gradle Filter Plugin</a>
+     */
+    alias(libs.plugins.gradle.versions.filter)
+
+    /**
+     * Hilt
+     */
+    alias(libs.plugins.hilt).apply(false)
+}

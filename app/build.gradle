@@ -1,0 +1,40 @@
+plugins {
+    id("example.android.application")
+    id("example.android.application.compose")
+    id("example.android.hilt")
+}
+
+android {
+    namespace = "com.example.composenavigation"
+
+    defaultConfig {
+        applicationId = "com.example.composenavigation"
+
+        versionCode = 1
+        versionName = "0.0.1"
+    }
+}
+
+dependencies {
+
+    // Features
+    implementation(project(":home"))
+    implementation(project(":details"))
+
+    // Android X
+    implementation(libs.androidx.activity.compose)
+
+    // Material
+    implementation(libs.google.material)
+
+    // Compose
+    implementation(libs.compose.runtime)
+    implementation(libs.compose.material.three)
+    implementation(libs.compose.navigation)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+
+    // Navigation
+    implementation(libs.androidx.navigation.fragment)
+    implementation(libs.androidx.navigation.ui)
+    implementation(libs.accompanist.navigation.animation)
+}
