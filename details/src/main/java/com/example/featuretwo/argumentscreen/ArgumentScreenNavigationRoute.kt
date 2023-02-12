@@ -9,7 +9,6 @@ const val argumentsScreenNavigationRoute = "arguments_screen_navigation_route"
 
 internal const val stringArgumentId = "stringArgumentId"
 internal const val intArgumentId = "intArgumentId"
-internal const val uuidArgumentId = "uuidArgumentId"
 
 internal class DetailsWithArgumentArgs(
     val stringArgument: String,

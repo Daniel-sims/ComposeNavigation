@@ -8,7 +8,6 @@ import com.example.featuretwo.argumentscreen.ArgumentScreenRoute
 import com.example.featuretwo.argumentscreen.argumentsScreenNavigationRoute
 import com.example.featuretwo.argumentscreen.intArgumentId
 import com.example.featuretwo.argumentscreen.stringArgumentId
-import com.example.featuretwo.argumentscreen.uuidArgumentId
 import com.example.featuretwo.noargumentscreen.NoArgumentScreenRoute
 import com.example.featuretwo.noargumentscreen.noArgumentsScreenNavigationRoute
 import com.google.accompanist.navigation.animation.composable
